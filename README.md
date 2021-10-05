@@ -12,7 +12,7 @@ It returns results for *Webcams*, *Traffic lights*, *Refridgerators*, *Smart TVs
 # Prerequisites
 * Shodan API Key
 
-Signup to get an api key [here](https://shodan.io)
+Get API key [here](https://shodan.io)
 
 # Installation
 **Clone this repo**
