@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 # Usage
 ```
-python eye SEARCHEQUERY
+python eye SEARCHQUERY
 ```
 
 **Alternatively**:
