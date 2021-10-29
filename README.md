@@ -15,17 +15,36 @@ It returns results for *Webcams*, *Traffic lights*, *Refridgerators*, *Smart TVs
 Get it [here](https://shodan.io)
 
 # Installation
-**Clone this repo**
+**Clone repository**:
+```
+git clone https://github.com/rlyonheart/thelordseye.git
+```
 
-<code>$ git clone https://github.com/rlyonheart/thelordseye.git</code>
+```
+cd thelordseye
+```
 
-<code>$ cd thelordseye</code>
+```
+pip install -r requirements.txt
+```
 
-<code>$ pip install -r requirements.txt</code>
+# Usage
+```
+chmod +x eye
+```
+
+```
+./eye SEARCHQUERY
+```
+
+**Alternatively**:
+```
+python eye SEARCHEQUERY
+```
 
 # Optional Arguments
 | Flag          | MetaVar|                 Usage|
-| ------------- |:-------------:|:----------------------:|:---------:|
+| ------------- |:----------------------:|:---------:|
 | <code>-o/--output</code>      |   **FILENAME** |  *output filename*  |
 | <code>-r/--raw</code>  |    |  *return results in raw json format (also returns more detailed information*  |
 | <code>-v/--verbosity</code>  |    |  *run program in verbose mode*  |
@@ -35,8 +54,3 @@ Get it [here](https://shodan.io)
 # Disclaimer
 *This tool was developed sorely for educational purposes and should not be used in environments without legal authorization.
 Therefore, the author shall not be responsible for the damages that might be done with it.*
-
-
-
-
-*made with 🖤 by* [rly0nheart](https://about.me)
