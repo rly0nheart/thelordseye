@@ -30,7 +30,11 @@ pip install -r requirements.txt
 
 # Usage
 ```
-python eye SEARCHQUERY
+python eye -q SEARCHQUERY
+```
+
+```
+python eye -i IPADDRESS
 ```
 
 **Alternatively**:
@@ -39,12 +43,18 @@ chmod +x eye
 ```
 
 ```
-./eye SEARCHQUERY
+./eye -q SEARCHQUERY
+```
+
+```
+./eye -i IPADDRESS
 ```
 
 # Optional Arguments
 | Flag          | MetaVar|                 Usage|
 | ------------- |:----------------------:|:---------:|
+| <code>-q/--query</code>  | **QUERY**    |  *search query*  |
+| <code>-i/--ip</code>  |  **IP**  |  *target ip*  |
 | <code>-o/--output</code>      |   **FILENAME** |  *output filename*  |
 | <code>-r/--raw</code>  |    |  *return results in raw json format (also returns more detailed information*  |
 | <code>-v/--verbosity</code>  |    |  *run program in verbose mode*  |
