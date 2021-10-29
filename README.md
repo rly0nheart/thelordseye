@@ -1,6 +1,6 @@
 ![Python Version](https://img.shields.io/badge/python-3.x-blue?style=flat&logo=python)
 ![OS](https://img.shields.io/badge/OS-GNU%2FLinux-red?style=flat&logo=linux)
-![GitHub](https://img.shields.io/github/license/rlyonheart/thelordsseye?ystyle=flat)
+![GitHub](https://img.shields.io/github/license/rlyonheart/thelordseye?style=flat)
 ![CodeFactor](https://www.codefactor.io/repository/github/rlyonheart/thelordseye/badge)
 ![Lines of code](https://img.shields.io/tokei/lines/github/rlyonheart/thelordseye)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rlyonheart/thelordseye) 
@@ -23,12 +23,12 @@ Get API key [here](https://shodan.io)
 
 <code>$ pip install -r requirements.txt</code>
 
-# Optional Args
-| Flag           | Or            |MetaVar|                 Usage|
+# Optional Arguments
+| Flag          | MetaVar|                 Usage|
 | ------------- |:-------------:|:----------------------:|:---------:|
-| <code>-o</code>      | <code>--outfile</code>      |   **FILENAME** |  *Output filename*  |
-| <code>-v</code> | <code>--verbosity</code>  |    |  *run program in verbose mode*  |
-
+| <code>-o/--output</code>      |   **FILENAME** |  *output filename*  |
+| <code>-r/--raw</code>  |    |  *return results in raw json format (also returns more detailed information*  |
+| <code>-v/--verbosity</code>  |    |  *run program in verbose mode*  |
 
 > **Note**: If your search query contains spaces, you will have to put it inside " " symbols.
 
