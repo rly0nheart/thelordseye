@@ -30,16 +30,16 @@ pip install -r requirements.txt
 
 # Usage
 ```
+python eye SEARCHEQUERY
+```
+
+**Alternatively**:
+```
 chmod +x eye
 ```
 
 ```
 ./eye SEARCHQUERY
-```
-
-**Alternatively**:
-```
-python eye SEARCHEQUERY
 ```
 
 # Optional Arguments
