@@ -37,6 +37,11 @@ python eye -q SEARCHQUERY
 python eye -i IPADDRESS
 ```
 
+```
+python eye -p
+```
+
+
 **Alternatively**:
 ```
 chmod +x eye
@@ -50,14 +55,18 @@ chmod +x eye
 ./eye -i IPADDRESS
 ```
 
+```
+./eye -p
+```
 # Optional Arguments
 | Flag          | MetaVar|                 Usage|
 | ------------- |:----------------------:|:---------:|
-| <code>-q/--query</code>  | **QUERY**    |  *search query*  |
-| <code>-i/--ip</code>  |  **IP**  |  *target ip*  |
-| <code>-o/--output</code>      |   **FILENAME** |  *output filename*  |
-| <code>-r/--raw</code>  |    |  *return results in raw json format (also returns more detailed information*  |
-| <code>-v/--verbosity</code>  |    |  *run program in verbose mode*  |
+| <code>-q/--query</code>  | **QUERY**    |  *search query; is search query contains spaces, put it inside quote " " symbols*  |
+| <code>-i/--ip</code>  |  **IP**  |  *return information relating to the specified IP address*  |
+| <code>-p/--ports</code>  |    |  *return a list of ports that are currently being scanned by Shodan*  |
+| <code>-o/--output</code>      |   **FILENAME** |  *write output to a specified file*  |
+| <code>-r/--raw</code>  |    |  *return output in raw json format (also returns more detailed information)*  |
+| <code>-v/--verbosity</code>  |    |  *run thelordseye in verbose mode*  |
 
 > **Note**: If your search query contains spaces, you will have to put it inside " " symbols.
 
