@@ -28,36 +28,6 @@ cd thelordseye
 pip install -r requirements.txt
 ```
 
-# Usage
-```
-python eye -q SEARCHQUERY
-```
-
-```
-python eye -i IPADDRESS
-```
-
-```
-python eye -p
-```
-
-
-**Alternatively**:
-```
-chmod +x eye
-```
-
-```
-./eye -q SEARCHQUERY
-```
-
-```
-./eye -i IPADDRESS
-```
-
-```
-./eye -p
-```
 # Optional Arguments
 | Flag          | MetaVar|                 Usage|
 | ------------- |:----------------------:|:---------:|
