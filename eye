@@ -127,7 +127,8 @@ class thelordseye:
 		if args.raw:
 			pprint(response)
 					
-	# Get a list of search filters to use in search queries		
+	# Get a list of search filter that can be used in search queries
+      # Note: to use search filters, a user will need to have a premium plan API Key 		
 	def filters(self):
 		base = self.base + f"shodan/host/search/filters?key={api_key}"
 		response = requests.get(base).json()
@@ -167,7 +168,7 @@ parser = argparse.ArgumentParser(description=f"{green}The Lord's Eye{white}: IoT
 parser.add_argument("-q", "--query", dest="query", help=f"{white}search query; {green}if query contains spaces, put it inside quote symbols {white}' '{reset}", metavar=f"{white}QUERY{reset}")
 parser.add_argument("-i", "--ip", dest="ip", help=f"{white}return information relating to specified {green} IP Address{reset}", metavar=f"{white}IP{reset}")
 parser.add_argument("-p", "--ports", dest="ports", help=f"{white}return a list of {green}ports{white} that are currently being scanned by {green}Shodan.io{reset}", action="store_true")
-parser.add_argument("-f", "--filters", dest="filters", help=f"{white}return a list of search {green}filters{white} to use in search queries{reset}", action="store_true")
+parser.add_argument("-f", "--filters", dest="filters", help=f"{white}return a list of search {green}filters{white} that can be used in search queries. {red}Note{white}: To use search filters, the user will need to have a premium plan API Key{reset}", action="store_true")
 parser.add_argument("-o", "--output", dest="output", help=f"{white}write output to a specified {green}file{reset}", metavar=f"{white}FILENAME{reset}")
 parser.add_argument("-r", "--raw", dest="raw", help=f"{white}return output in raw {green}json{white} format{reset}", action="store_true")
 parser.add_argument("-v", "--verbose", dest="verbose", help=f"{white}run thelordseye in {green}verbose{white} mode{reset}", action="store_true")
