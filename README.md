@@ -44,3 +44,14 @@ pip install -r requirements.txt
 # Disclaimer
 *This tool was developed sorely for educational purposes and should not be used in environments without legal authorization.
 Therefore, the author shall not be responsible for the damages that might be done with it.*
+
+# LICENSE
+![license](https://user-images.githubusercontent.com/74001397/137917929-2f2cdb0c-4d1d-4e4b-9f0d-e01589e027b5.png)
+
+# About author
+* [About.me](https://about.me/rlyonheart)
+
+# Contact author
+* [Github](https://github.com/rlyonheart)
+
+* [Twitter](https://twitter.com/rly0nheart)
