@@ -29,6 +29,9 @@ class thelordseye:
 		elif args.ports:
 			self.ports()
 			
+		elif args.filters:
+			self.filters()
+			
 		else:
 			exit(f"{white}thelordseye: try {green}eye -h {white}or {green}eye --help {white} to view help message.{reset}") 
 	
@@ -48,7 +51,7 @@ class thelordseye:
 └╼ Result Number: {green}{count}{white}
 
 {result['org']}
-├──╼ L o c a t i o n
+├──╼ L o c a t i o n 
 ├─ Country: {green}{result['location']['country_name']}{white}
 ├─ City: {green}{result['location']['city']}{white}
 ├─ Country code: {green}{result['location']['country_code']}{white}
@@ -58,7 +61,7 @@ class thelordseye:
 ├─ DMA code: {green}{result['location']['dma_code']}{white}
 ├─ Longitude: {red}{result['location']['longitude']}{white}
 ├─ Latitude: {red}{result['location']['latitude']}{white}
-├──╼ N e t w o r k
+├──╼ N e t w o r k 
 ├─ IP Address: {red}{result['ip_str']}{white}
 ├─ OS: {red}{result['os']}{white}
 ├─ Hostnames: {green}{result['hostnames']}{white}
@@ -86,7 +89,7 @@ class thelordseye:
 		result = response['data'][0]
 		data = f"""{white}
 {result['org']}
-├──╼ L o c a t i o n
+├──╼ L o c a t i o n 
 ├─ Country: {green}{result['location']['country_name']}{white}
 ├─ City: {green}{result['location']['city']}{white}
 ├─ Country code: {green}{result['location']['country_code']}{white}
@@ -96,7 +99,7 @@ class thelordseye:
 ├─ DMA code: {green}{result['location']['dma_code']}{white}
 ├─ Longitude: {red}{result['location']['longitude']}{white}
 ├─ Latitude: {red}{result['location']['latitude']}{white}
-├──╼ N e t w o r k
+├──╼ N e t w o r k 
 ├─ IP Address: {red}{result['ip_str']}{white}
 ├─ OS: {red}{result['os']}{white}
 ├─ Hostnames: {green}{result['hostnames']}{white}
@@ -118,11 +121,22 @@ class thelordseye:
 	def ports(self):
 		base = self.base + f"shodan/ports?key={api_key}"
 		response = requests.get(base).json()
-		print(f"{white}├──╼ P o r t s")
+		print(f"{white}├──╼ P o r t s ")
 		for port in response:
 			print(f"├─ {green}{port}{white}")
 		if args.raw:
 			pprint(response)
+					
+	# Get a list of search filters to use in search queries		
+	def filters(self):
+		base = self.base + f"shodan/host/search/filters?key={api_key}"
+		response = requests.get(base).json()
+		print(f"{white}├──╼ F i l t e r s ")
+		for filter in response:
+			print(f"{white}├─ {green}{filter}{reset}")
+		if args.raw:
+			pprint(response)
+			
 
 	# Write output to a file	
 	def output(self,data):
@@ -153,6 +167,7 @@ parser = argparse.ArgumentParser(description=f"{green}The Lord's Eye{white}: IoT
 parser.add_argument("-q", "--query", dest="query", help=f"{white}search query; {green}if query contains spaces, put it inside quote symbols {white}' '{reset}", metavar=f"{white}QUERY{reset}")
 parser.add_argument("-i", "--ip", dest="ip", help=f"{white}return information relating to specified {green} IP Address{reset}", metavar=f"{white}IP{reset}")
 parser.add_argument("-p", "--ports", dest="ports", help=f"{white}return a list of {green}ports{white} that are currently being scanned by {green}Shodan.io{reset}", action="store_true")
+parser.add_argument("-f", "--filters", dest="filters", help=f"{white}return a list of search {green}filters{white} to use in search queries{reset}", action="store_true")
 parser.add_argument("-o", "--output", dest="output", help=f"{white}write output to a specified {green}file{reset}", metavar=f"{white}FILENAME{reset}")
 parser.add_argument("-r", "--raw", dest="raw", help=f"{white}return output in raw {green}json{white} format{reset}", action="store_true")
 parser.add_argument("-v", "--verbose", dest="verbose", help=f"{white}run thelordseye in {green}verbose{white} mode{reset}", action="store_true")
