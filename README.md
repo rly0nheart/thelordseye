@@ -6,7 +6,7 @@
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rlyonheart/thelordseye?style=flat&logo=github) 
 ![GitHub repo size](https://img.shields.io/github/repo-size/rlyonheart/thelordseye?style=flat&logo=github)
 
-An OSINT tool that searches for devices directly connected to the internet (IoT) with a user specified query.
+> An OSINT tool that searches for devices directly connected to the internet (IoT) with a user specified query.
 It returns results for *Webcams*, *Traffic lights*, *Refridgerators*, *Smart TVs* etc. 
 
 # Prerequisites
