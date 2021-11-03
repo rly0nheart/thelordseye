@@ -34,7 +34,7 @@ pip install -r requirements.txt
 | <code>-q/--query</code>  | **QUERY**    |  *search query; is search query contains spaces, put it inside quote " " symbols*  |
 | <code>-i/--ip</code>  |  **IP**  |  *return information relating to the specified IP address*  |
 | <code>-p/--ports</code>  |    |  *return a list of ports that are currently being scanned by Shodan*  |
-| <code>-f/--filters</code>  |    |  *return a list of search filters that can be used in search queries. {red}Note{white}: To use search filters, the user will need to have a premium plan API Key*  |
+| <code>-f/--filters</code>  |    |  *return a list of search filters that can be used in search queries.* **Note**: *To use search filters, the user will need to have a premium plan API Key*  |
 | <code>-o/--output</code>      |   **FILENAME** |  *write output to a specified file*  |
 | <code>-r/--raw</code>  |    |  *return output in raw json format (also returns more detailed information)*  |
 | <code>-v/--verbosity</code>  |    |  *run thelordseye in verbose mode*  |
