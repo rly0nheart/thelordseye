@@ -34,7 +34,7 @@ $ chmod +x eye
 $ ./eye --auth [your-shodan-api-key]
 ```
 
-> *Your API key will be stored in a hidden .txt file*
+> *Your API key will be stored in a hidden .auth file*
 
 # Optional Arguments
 | Flag          | MetaVar|                 Usage|
