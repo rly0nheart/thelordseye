@@ -12,17 +12,17 @@ from lib import colors, headers
 class thelordseye:
 	def __init__(self,args):
 		if args.auth:
-		    if os.path.exists('.api_key.txt') and os.path.getsize('.api_key.txt') > 0:
+		    if os.path.exists('.apikey.auth') and os.path.getsize('.apikey.auth') > 0:
 		        exit(f'{colors.white}[{colors.green}={colors.white}] Already authenticated!\nIf you wish to re-authenticate with another api key, delete the current {colors.green}.api_key.txt{colors.white} file first.{colors.reset}')     
 		            
 		    else:
-		        with open('.api_key.txt', 'w') as file:
+		        with open('.apikey.auth', 'w') as file:
 		            self.api_key = args.auth
 		            file.write(self.api_key)
 		            file.close()
-		        exit(f'{colors.white}[{colors.green}+{colors.white}] API key stored in {colors.green}.api_key.txt{colors.white}. Re-run program{colors.reset}')
+		        exit(f'{colors.white}[{colors.green}+{colors.white}] API key stored in {colors.green}.apikey.auth{colors.white}. Re-run program{colors.reset}')
 		        
-		with open('.api_key.txt', 'r') as file:
+		with open('.apikey.auth', 'r') as file:
 		    self.api_key = file.readline().rstrip('\n')
 		self.api = f"https://api.shodan.io/"
 		self.headers = {"User-Agent": f"random.choice(user_agents)"}
