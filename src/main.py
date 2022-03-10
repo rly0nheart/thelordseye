@@ -13,7 +13,7 @@ class thelordseye:
 	def __init__(self,args):
 		if args.auth:
 		    if os.path.exists('.apikey.auth') and os.path.getsize('.apikey.auth') > 0:
-		        exit(f'{colors.white}[{colors.green}={colors.white}] Already authenticated!\nIf you wish to re-authenticate with another api key, delete the current {colors.green}.api_key.txt{colors.white} file first.{colors.reset}')     
+		        exit(f'{colors.white}[{colors.green}={colors.white}] Already authenticated!\nIf you wish to re-authenticate with another api key, delete the current {colors.green}.apikey.auth{colors.white} file first.{colors.reset}')     
 		            
 		    else:
 		        with open('.apikey.auth', 'w') as file:
