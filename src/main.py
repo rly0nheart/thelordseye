@@ -93,8 +93,6 @@ class thelordseye:
 ├─ City: {colors.green}{result['location']['city']}{colors.white}
 ├─ Country code: {colors.green}{result['location']['country_code']}{colors.white}
 ├─ Region code: {colors.green}{result['location']['region_code']}{colors.white}
-├─ Area code: {colors.green}{result['location']['area_code']}{colors.white}
-├─ Postal code: {colors.green}{result['location']['postal_code']}{colors.white}
 ├─ Longitude: {colors.red}{result['location']['longitude']}{colors.white}
 ├─ Latitude: {colors.red}{result['location']['latitude']}{colors.white}
 ├──╼ N e t w o r k 
