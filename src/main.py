@@ -78,7 +78,7 @@ class thelordseye:
 			    
 	# Get information related to target IP address
 	def ip(self):
-		response = requests.get(uri).json()
+		response = requests.get(self.uri).json()
 		if "data" not in response:
 			print(f'{colors.white}[{colors.red}-{colors.white}] No information found for \'{args.ip}\'.{colors.green}')
 		else:
