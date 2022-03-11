@@ -44,9 +44,9 @@ $ ./eye --auth [your-shodan-api-key]
 | <code>-i/--ip</code>  |  **IP**  |  *return information relating to the specified IP address*  |
 | <code>-o/--output</code>      |   **FILENAME** |  *write output to a specified file (will not work with -r/--raw)*  |
 | <code>-r/--raw</code>  |    |  *return output in raw json format (also returns more detailed information)*  |
-| <code>-v/--verbose</code>  |    |  *run thelordseye in verbose mode*  |
+| <code>-v/--verbose</code>  |    |  *enable verbosity*  |
 | <code>-u/--update</code>  |    |  *fetch program's latest updates*  |
-| <code>--version</code>  |    |  *shiw program's version number and exit* |
+| <code>--version</code>  |    |  *show program's version number and exit* |
 
 
 # Disclaimer
