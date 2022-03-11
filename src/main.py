@@ -137,7 +137,7 @@ class thelordseye:
 	 
 	# Fetch latest updates   	
 	def update(self):
-	    files_to_fetch = ['src/main.py','lib/headers.py','lib/banner.py','lib/colors.py','eye','requirements.txt','README.md']
+	    files_to_fetch = ['src/main.py','lib/headers.py','lib/banner.py','lib/colors.py','eye','requirements.txt','README.md','LICENSE']
 	    for file in tqdm(files_to_fetch,desc=f'{colors.white}[{colors.green}~{colors.white}] Fetching update(s){colors.reset}'):
 	    	data = urllib.request.urlopen(f'https://raw.githubusercontent.com/rly0nheart/thelordseye/master/{file}').read()
 	    	with open(file,'wb') as script:
@@ -155,7 +155,7 @@ parser.add_argument('-o','--output',help='write output to a file (will not work 
 parser.add_argument('-r','--raw',help='return results in raw json format', action='store_true')
 parser.add_argument('-v','--verbose',help='enable verbosity', action='store_true')
 parser.add_argument('-u','--update',help='fetch program\'s latest updates',action='store_true')
-parser.add_argument('--version',action='version',version='1.4-alpha')
+parser.add_argument('--version',action='version',version='1.5-alpha')
 args = parser.parse_args()
 start_time = datetime.now()
 if args.verbose:
