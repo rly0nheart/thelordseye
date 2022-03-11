@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 from src.main import *
-from lib import colors,banner
 from datetime import datetime
+from lib import colors,banner
 
 print(banner.banner)
 if __name__ == '__main__':
