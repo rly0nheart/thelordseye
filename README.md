@@ -39,13 +39,15 @@ $ ./eye --auth [your-shodan-api-key]
 # Optional Arguments
 | Flag          | MetaVar|                 Usage|
 | ------------- |:----------------------:|:---------:|
-| <code>-q/--query</code>  | **QUERY**    |  *search query; is search query contains spaces, put it inside quote " " symbols*  |
-| <code>-i/--ip</code>  |  **IP**  |  *return information relating to the specified IP address*  |
-| <code>-p/--ports</code>  |    |  *return a list of ports that are currently being scanned by Shodan*  |
 | <code>-a/--auth</code>  |  **API key**  |  *api authentication with a valid shodan.io api key.* |
-| <code>-o/--output</code>      |   **FILENAME** |  *write output to a specified file*  |
+| <code>-q/--query</code>  | **QUERY**    |  *search query*|
+| <code>-i/--ip</code>  |  **IP**  |  *return information relating to the specified IP address*  |
+| <code>-o/--output</code>      |   **FILENAME** |  *write output to a specified file (will not work with -r/--raw)*  |
 | <code>-r/--raw</code>  |    |  *return output in raw json format (also returns more detailed information)*  |
 | <code>-v/--verbose</code>  |    |  *run thelordseye in verbose mode*  |
+| <code>-u/--update</code>  |    |  *fetch program's latest updates*  |
+| <code>--version</code>  |    |  *shiw program's version number and exit* |
+
 
 # Disclaimer
 > *This tool was developed sorely for educational purposes and should not be used in environments without legal authorization.
