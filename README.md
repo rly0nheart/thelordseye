@@ -1,3 +1,6 @@
+# Use [Net Lasso](https://github.com/rly0nheart/netlasso) as a better and improved alternative.
+
+
 ![Python Version](https://img.shields.io/badge/python-3.x-blue?style=for-the-badge&logo=python)
 ![OS](https://img.shields.io/badge/OS-GNU%2FLinux-red?style=for-the-badge&logo=linux)
 ![GitHub](https://img.shields.io/github/license/rlyonheart/thelordseye?style=for-the-badge&logo=github)
